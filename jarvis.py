@@ -50,3 +50,16 @@ def wishme():
     speak("Jarvis at your service, please tell me how i can help you?")
 
 wishme()
+
+def takeCommandCMD():
+    query= input("please tell me how i can help you\n")
+    return query
+
+if __name__ == "__main__":
+    wishme()
+    while True:
+        query=takeCommandCMD().lower()
+        if 'time' in query:
+            time()
+        elif 'date' in query
+            date()
